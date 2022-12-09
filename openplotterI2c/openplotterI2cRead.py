@@ -246,6 +246,8 @@ def main():
 						if instances[-1]['sensor']['data'][1]['SKkey']: instances[-1]['sensor']['data'][1]['object'] = AnalogIn(instances[-1]['object'], ADS11.P1)
 						if instances[-1]['sensor']['data'][2]['SKkey']: instances[-1]['sensor']['data'][2]['object'] = AnalogIn(instances[-1]['object'], ADS11.P2)
 						if instances[-1]['sensor']['data'][3]['SKkey']: instances[-1]['sensor']['data'][3]['object'] = AnalogIn(instances[-1]['object'], ADS11.P3)
+						if instances[-1]['sensor']['data'][4]['SKkey']: instances[-1]['sensor']['data'][3]['object'] = AnalogIn(instances[-1]['object'], ADS11.P0,ADS11.P1)
+						if instances[-1]['sensor']['data'][5]['SKkey']: instances[-1]['sensor']['data'][3]['object'] = AnalogIn(instances[-1]['object'], ADS11.P2,ADS11.P3)
 
 					elif i2c_sensors[i]['type'] == 'ADS1015':
 						import adafruit_ads1x15.ads1015 as ADS10
